@@ -1,0 +1,315 @@
+/* ── Variables de tema (por defecto: Cosmos) ── */
+:root,
+[data-tema="cosmos"] {
+  --tema-bg: #050510;
+  --tema-text: #e2e8f0;
+  --tema-text-muted: #94a3b8;
+  --tema-text-subtle: #475569;
+  --tema-accent: #22d3ee;
+  --tema-accent-2: #a78bfa;
+  --tema-accent-3: #f472b6;
+  --tema-accent-soft: rgba(139, 92, 246, 0.28);
+  --tema-accent-text: #ddd6fe;
+  --tema-link: #22d3ee;
+  --tema-festivo: #fcd34d;
+  --tema-card-bg: rgba(10, 10, 31, 0.78);
+  --tema-card-border: rgba(255, 255, 255, 0.09);
+  --tema-card-inner-bg: rgba(255, 255, 255, 0.04);
+  --tema-card-inner-border: rgba(255, 255, 255, 0.07);
+  --tema-cabecera-grad: linear-gradient(135deg, rgba(34, 211, 238, 0.14), rgba(167, 139, 250, 0.14));
+  --tema-mini-cabecera: linear-gradient(135deg, rgba(34, 211, 238, 0.12), rgba(167, 139, 250, 0.12));
+  --tema-aurora-a: rgba(34, 211, 238, 0.13);
+  --tema-aurora-b: rgba(167, 139, 250, 0.11);
+  --tema-aurora-c: rgba(244, 114, 182, 0.09);
+  --tema-orbe-1: #a78bfa;
+  --tema-orbe-2: #22d3ee;
+  --tema-hoy-bg: rgba(34, 211, 238, 0.22);
+  --tema-hoy-text: #67e8f9;
+  --tema-hoy-ring: rgba(34, 211, 238, 0.55);
+  --tema-sel-bg: rgba(139, 92, 246, 0.32);
+  --tema-sel-ring: rgba(167, 139, 250, 0.65);
+  --tema-dias-cab: rgba(167, 139, 250, 0.72);
+  --tema-btn-grad: linear-gradient(to right, #06b6d4, #8b5cf6);
+  --tema-text-grad: linear-gradient(135deg, #22d3ee, #a78bfa, #f472b6);
+  --tema-barra-carga: linear-gradient(90deg, #22d3ee, #a78bfa, #f472b6);
+  --tema-detalle-label: #c4b5fd;
+  --tema-scrollbar: rgba(167, 139, 250, 0.35);
+}
+
+[data-tema="aurora"] {
+  --tema-bg: #030f0a;
+  --tema-text: #ecfdf5;
+  --tema-text-muted: #86efac;
+  --tema-text-subtle: #4d7c5f;
+  --tema-accent: #34d399;
+  --tema-accent-2: #06b6d4;
+  --tema-accent-3: #a7f3d0;
+  --tema-accent-soft: rgba(52, 211, 153, 0.22);
+  --tema-accent-text: #a7f3d0;
+  --tema-link: #2dd4bf;
+  --tema-festivo: #fde047;
+  --tema-card-bg: rgba(4, 24, 16, 0.82);
+  --tema-card-border: rgba(52, 211, 153, 0.15);
+  --tema-cabecera-grad: linear-gradient(135deg, rgba(52, 211, 153, 0.16), rgba(6, 182, 212, 0.14));
+  --tema-mini-cabecera: linear-gradient(135deg, rgba(52, 211, 153, 0.14), rgba(6, 182, 212, 0.12));
+  --tema-aurora-a: rgba(52, 211, 153, 0.16);
+  --tema-aurora-b: rgba(6, 182, 212, 0.12);
+  --tema-aurora-c: rgba(167, 243, 208, 0.08);
+  --tema-orbe-1: #34d399;
+  --tema-orbe-2: #06b6d4;
+  --tema-hoy-bg: rgba(52, 211, 153, 0.25);
+  --tema-hoy-text: #6ee7b7;
+  --tema-hoy-ring: rgba(52, 211, 153, 0.6);
+  --tema-sel-bg: rgba(6, 182, 212, 0.28);
+  --tema-sel-ring: rgba(45, 212, 191, 0.65);
+  --tema-dias-cab: rgba(110, 231, 183, 0.75);
+  --tema-btn-grad: linear-gradient(to right, #10b981, #0891b2);
+  --tema-text-grad: linear-gradient(135deg, #34d399, #06b6d4, #a7f3d0);
+  --tema-barra-carga: linear-gradient(90deg, #34d399, #06b6d4, #a7f3d0);
+  --tema-detalle-label: #6ee7b7;
+  --tema-scrollbar: rgba(52, 211, 153, 0.35);
+}
+
+[data-tema="atardecer"] {
+  --tema-bg: #120508;
+  --tema-text: #fff1f2;
+  --tema-text-muted: #fda4af;
+  --tema-text-subtle: #9f4d5a;
+  --tema-accent: #fb923c;
+  --tema-accent-2: #f472b6;
+  --tema-accent-3: #fde68a;
+  --tema-accent-soft: rgba(251, 146, 60, 0.22);
+  --tema-accent-text: #fed7aa;
+  --tema-link: #fb923c;
+  --tema-festivo: #fde047;
+  --tema-card-bg: rgba(28, 8, 14, 0.85);
+  --tema-card-border: rgba(251, 146, 60, 0.18);
+  --tema-cabecera-grad: linear-gradient(135deg, rgba(251, 146, 60, 0.18), rgba(244, 114, 182, 0.16));
+  --tema-mini-cabecera: linear-gradient(135deg, rgba(251, 146, 60, 0.15), rgba(244, 114, 182, 0.13));
+  --tema-aurora-a: rgba(251, 146, 60, 0.15);
+  --tema-aurora-b: rgba(244, 114, 182, 0.13);
+  --tema-aurora-c: rgba(253, 230, 138, 0.08);
+  --tema-orbe-1: #f472b6;
+  --tema-orbe-2: #fb923c;
+  --tema-hoy-bg: rgba(251, 146, 60, 0.28);
+  --tema-hoy-text: #fdba74;
+  --tema-hoy-ring: rgba(251, 146, 60, 0.65);
+  --tema-sel-bg: rgba(244, 114, 182, 0.3);
+  --tema-sel-ring: rgba(251, 146, 60, 0.7);
+  --tema-dias-cab: rgba(253, 186, 116, 0.8);
+  --tema-btn-grad: linear-gradient(to right, #ea580c, #db2777);
+  --tema-text-grad: linear-gradient(135deg, #fb923c, #f472b6, #fde68a);
+  --tema-barra-carga: linear-gradient(90deg, #fb923c, #f472b6, #fde68a);
+  --tema-detalle-label: #fda4af;
+  --tema-scrollbar: rgba(251, 146, 60, 0.35);
+}
+
+[data-tema="oceano"] {
+  --tema-bg: #020617;
+  --tema-text: #e0f2fe;
+  --tema-text-muted: #7dd3fc;
+  --tema-text-subtle: #3b6b8a;
+  --tema-accent: #0ea5e9;
+  --tema-accent-2: #6366f1;
+  --tema-accent-3: #38bdf8;
+  --tema-accent-soft: rgba(14, 165, 233, 0.22);
+  --tema-accent-text: #bae6fd;
+  --tema-link: #38bdf8;
+  --tema-festivo: #fbbf24;
+  --tema-card-bg: rgba(6, 16, 36, 0.85);
+  --tema-card-border: rgba(56, 189, 248, 0.16);
+  --tema-cabecera-grad: linear-gradient(135deg, rgba(14, 165, 233, 0.16), rgba(99, 102, 241, 0.14));
+  --tema-mini-cabecera: linear-gradient(135deg, rgba(14, 165, 233, 0.14), rgba(99, 102, 241, 0.12));
+  --tema-aurora-a: rgba(14, 165, 233, 0.14);
+  --tema-aurora-b: rgba(99, 102, 241, 0.12);
+  --tema-aurora-c: rgba(56, 189, 248, 0.09);
+  --tema-orbe-1: #6366f1;
+  --tema-orbe-2: #0ea5e9;
+  --tema-hoy-bg: rgba(14, 165, 233, 0.26);
+  --tema-hoy-text: #7dd3fc;
+  --tema-hoy-ring: rgba(56, 189, 248, 0.6);
+  --tema-sel-bg: rgba(99, 102, 241, 0.3);
+  --tema-sel-ring: rgba(14, 165, 233, 0.65);
+  --tema-dias-cab: rgba(125, 211, 252, 0.75);
+  --tema-btn-grad: linear-gradient(to right, #0284c7, #4f46e5);
+  --tema-text-grad: linear-gradient(135deg, #0ea5e9, #6366f1, #38bdf8);
+  --tema-barra-carga: linear-gradient(90deg, #0ea5e9, #6366f1, #38bdf8);
+  --tema-detalle-label: #93c5fd;
+  --tema-scrollbar: rgba(56, 189, 248, 0.35);
+}
+
+[data-tema="bosque"] {
+  --tema-bg: #071208;
+  --tema-text: #ecfccb;
+  --tema-text-muted: #86efac;
+  --tema-text-subtle: #3f6b45;
+  --tema-accent: #4ade80;
+  --tema-accent-2: #166534;
+  --tema-accent-3: #bef264;
+  --tema-accent-soft: rgba(74, 222, 128, 0.2);
+  --tema-accent-text: #bbf7d0;
+  --tema-link: #4ade80;
+  --tema-festivo: #facc15;
+  --tema-card-bg: rgba(8, 22, 10, 0.88);
+  --tema-card-border: rgba(74, 222, 128, 0.14);
+  --tema-cabecera-grad: linear-gradient(135deg, rgba(74, 222, 128, 0.15), rgba(22, 101, 52, 0.2));
+  --tema-mini-cabecera: linear-gradient(135deg, rgba(74, 222, 128, 0.13), rgba(22, 101, 52, 0.18));
+  --tema-aurora-a: rgba(74, 222, 128, 0.12);
+  --tema-aurora-b: rgba(22, 101, 52, 0.18);
+  --tema-aurora-c: rgba(190, 242, 100, 0.07);
+  --tema-orbe-1: #166534;
+  --tema-orbe-2: #4ade80;
+  --tema-hoy-bg: rgba(74, 222, 128, 0.24);
+  --tema-hoy-text: #86efac;
+  --tema-hoy-ring: rgba(74, 222, 128, 0.55);
+  --tema-sel-bg: rgba(22, 101, 52, 0.45);
+  --tema-sel-ring: rgba(74, 222, 128, 0.6);
+  --tema-dias-cab: rgba(134, 239, 172, 0.72);
+  --tema-btn-grad: linear-gradient(to right, #16a34a, #14532d);
+  --tema-text-grad: linear-gradient(135deg, #4ade80, #22c55e, #bef264);
+  --tema-barra-carga: linear-gradient(90deg, #4ade80, #16a34a, #bef264);
+  --tema-detalle-label: #86efac;
+  --tema-scrollbar: rgba(74, 222, 128, 0.35);
+}
+
+[data-tema="medianoche"] {
+  --tema-bg: #0a0a12;
+  --tema-text: #f1f5f9;
+  --tema-text-muted: #94a3b8;
+  --tema-text-subtle: #475569;
+  --tema-accent: #818cf8;
+  --tema-accent-2: #64748b;
+  --tema-accent-3: #c7d2fe;
+  --tema-accent-soft: rgba(129, 140, 248, 0.22);
+  --tema-accent-text: #c7d2fe;
+  --tema-link: #a5b4fc;
+  --tema-festivo: #fbbf24;
+  --tema-card-bg: rgba(15, 15, 28, 0.9);
+  --tema-card-border: rgba(148, 163, 184, 0.12);
+  --tema-cabecera-grad: linear-gradient(135deg, rgba(129, 140, 248, 0.14), rgba(100, 116, 139, 0.12));
+  --tema-mini-cabecera: linear-gradient(135deg, rgba(129, 140, 248, 0.12), rgba(100, 116, 139, 0.1));
+  --tema-aurora-a: rgba(129, 140, 248, 0.1);
+  --tema-aurora-b: rgba(100, 116, 139, 0.1);
+  --tema-aurora-c: rgba(199, 210, 254, 0.06);
+  --tema-orbe-1: #6366f1;
+  --tema-orbe-2: #475569;
+  --tema-hoy-bg: rgba(129, 140, 248, 0.22);
+  --tema-hoy-text: #a5b4fc;
+  --tema-hoy-ring: rgba(129, 140, 248, 0.55);
+  --tema-sel-bg: rgba(99, 102, 241, 0.28);
+  --tema-sel-ring: rgba(165, 180, 252, 0.6);
+  --tema-dias-cab: rgba(148, 163, 184, 0.8);
+  --tema-btn-grad: linear-gradient(to right, #6366f1, #475569);
+  --tema-text-grad: linear-gradient(135deg, #818cf8, #94a3b8, #e2e8f0);
+  --tema-barra-carga: linear-gradient(90deg, #818cf8, #64748b, #c7d2fe);
+  --tema-detalle-label: #a5b4fc;
+  --tema-scrollbar: rgba(129, 140, 248, 0.35);
+}
+
+[data-tema="sakura"] {
+  --tema-bg: #10060f;
+  --tema-text: #fdf2f8;
+  --tema-text-muted: #f9a8d4;
+  --tema-text-subtle: #9d5c7e;
+  --tema-accent: #f9a8d4;
+  --tema-accent-2: #c084fc;
+  --tema-accent-3: #fbcfe8;
+  --tema-accent-soft: rgba(249, 168, 212, 0.22);
+  --tema-accent-text: #fbcfe8;
+  --tema-link: #f472b6;
+  --tema-festivo: #fde047;
+  --tema-card-bg: rgba(24, 8, 20, 0.86);
+  --tema-card-border: rgba(249, 168, 212, 0.16);
+  --tema-cabecera-grad: linear-gradient(135deg, rgba(249, 168, 212, 0.16), rgba(192, 132, 252, 0.14));
+  --tema-mini-cabecera: linear-gradient(135deg, rgba(249, 168, 212, 0.14), rgba(192, 132, 252, 0.12));
+  --tema-aurora-a: rgba(249, 168, 212, 0.14);
+  --tema-aurora-b: rgba(192, 132, 252, 0.12);
+  --tema-aurora-c: rgba(251, 207, 232, 0.08);
+  --tema-orbe-1: #c084fc;
+  --tema-orbe-2: #f9a8d4;
+  --tema-hoy-bg: rgba(249, 168, 212, 0.26);
+  --tema-hoy-text: #f9a8d4;
+  --tema-hoy-ring: rgba(244, 114, 182, 0.6);
+  --tema-sel-bg: rgba(192, 132, 252, 0.3);
+  --tema-sel-ring: rgba(249, 168, 212, 0.65);
+  --tema-dias-cab: rgba(249, 168, 212, 0.78);
+  --tema-btn-grad: linear-gradient(to right, #ec4899, #a855f7);
+  --tema-text-grad: linear-gradient(135deg, #f9a8d4, #c084fc, #fbcfe8);
+  --tema-barra-carga: linear-gradient(90deg, #f9a8d4, #c084fc, #fbcfe8);
+  --tema-detalle-label: #f9a8d4;
+  --tema-scrollbar: rgba(249, 168, 212, 0.35);
+}
+
+/* ── Selector de tema ── */
+.selector-tema {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--tema-card-inner-bg);
+  border: 1px solid var(--tema-card-inner-border);
+  border-radius: 0.75rem;
+}
+
+.selector-tema__etiqueta {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--tema-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.selector-tema__opciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.selector-tema__swatch {
+  width: 1.65rem;
+  height: 1.65rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+  touch-action: manipulation;
+}
+
+.selector-tema__swatch:hover {
+  transform: scale(1.12);
+}
+
+.selector-tema__swatch--activo {
+  border-color: var(--tema-text);
+  box-shadow: 0 0 0 2px var(--tema-bg), 0 0 12px var(--tema-accent);
+  transform: scale(1.1);
+}
+
+.cabecera__logo {
+  background: var(--tema-text-grad);
+}
+
+.cabecera__subtitulo {
+  color: var(--tema-text-muted);
+}
+
+.cabecera__vista-inactiva {
+  color: var(--tema-text-muted);
+}
+
+.cabecera__vista-inactiva:hover {
+  color: var(--tema-text);
+}
+
+.fase-lunar__rango {
+  color: var(--tema-text-muted);
+}
+
+.vista-btn--activa {
+  background: var(--tema-accent-soft) !important;
+  color: var(--tema-accent-text) !important;
+}

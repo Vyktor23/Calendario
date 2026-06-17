@@ -1,0 +1,47 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependencies (se regeneran con npm install / pip install)
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Build y caché (se regeneran con npm run build / vite)
+dist/
+dist-ssr/
+build/
+*.egg-info/
+*.tsbuildinfo
+.vite/
+coverage/
+*.local
+
+# IDE y editor
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secretos y entorno local
+.env
+.env.*
+!.env.example
