@@ -24,7 +24,7 @@ Calendario web con clima, festivos de Colombia, fases lunares e imágenes del co
 
 | Herramienta | Versión mínima |
 |-------------|----------------|
-| [Node.js](https://nodejs.org) | 18+ |
+| [Node.js](https://nodejs.org) | 24+ (requerido en Vercel) |
 | [Python](https://python.org) | 3.10+ |
 
 Comprobar instalación:
@@ -172,13 +172,23 @@ Vite redirige las peticiones `/api/*` al servidor Python en desarrollo.
 
 ## Publicar en producción
 
-**Frontend (Vercel, Netlify, etc.)**
+### Frontend en Vercel
 
-- Directorio raíz del deploy: `chronos`
-- Build: `npm run build`
-- Salida: `dist`
+En **Project Settings → General**:
 
-**Backend (Railway, Render, etc.)**
+| Opción | Valor |
+|--------|--------|
+| **Root Directory** | `chronos` |
+| **Node.js Version** | `24.x` |
+| **Framework Preset** | Vite |
+| **Build Command** | `npm run build` |
+| **Output Directory** | `dist` |
+
+El repo ya incluye `chronos/vercel.json`, `chronos/.nvmrc` y `"engines": { "node": "24.x" }` en `package.json` para que Vercel use Node 24 automáticamente.
+
+> **Importante:** El frontend en Vercel es estático. Clima, festivos e imágenes NASA necesitan el backend Python desplegado por separado (Railway, Render, etc.) y configurar su URL en el frontend.
+
+### Backend (Railway, Render, etc.)
 
 - Directorio: `server`
 - Comando: `uvicorn main:app --host 0.0.0.0 --port $PORT`
@@ -194,4 +204,4 @@ Vite redirige las peticiones `/api/*` al servidor Python en desarrollo.
 
 ---
 
-*Proyecto educativo SENA — calendario web full-stack.*
+*Proyecto educativo SENA — calendario web.*
