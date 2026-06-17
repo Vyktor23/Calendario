@@ -192,6 +192,8 @@ Si **Framework Preset** dice "Other" y el build tarda menos de 5 segundos, está
 
 El `vercel.json` de la raíz compila `chronos/` y publica `chronos/dist/`.
 
+En Vercel **sin backend Python**, la app usa las APIs públicas directamente (Open-Meteo, Nager.Date, NASA). Para usar tu servidor local en producción, despliega `server/` y define `VITE_API_URL` en las variables de entorno de Vercel.
+
 > **Importante:** El frontend en Vercel es estático. Clima, festivos e imágenes NASA necesitan el backend Python desplegado por separado (Railway, Render, etc.) y configurar su URL en el frontend.
 
 ### Backend (Railway, Render, etc.)

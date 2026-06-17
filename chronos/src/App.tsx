@@ -80,7 +80,7 @@ export default function App() {
       <FondoCosmico />
 
       <div className="app__contenido">
-        <AvisoServidor visible={!servidorOk} />
+        <AvisoServidor visible={import.meta.env.DEV && !servidorOk} />
 
         <Cabecera
           fechaActual={fechaActual}

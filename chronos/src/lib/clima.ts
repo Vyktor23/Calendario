@@ -103,5 +103,15 @@ export function colorEtiquetaClima(tipo: WeatherData['tipo_dato']): string {
 export function urlImagenNasa(urlOriginal: string): string {
   if (!urlOriginal) return ''
   if (urlOriginal.startsWith('/api/')) return urlOriginal
-  return `/api/nasa/imagen?url=${encodeURIComponent(urlOriginal)}`
+
+  const apiUrl = import.meta.env.VITE_API_URL?.trim()
+  if (apiUrl) {
+    return `${apiUrl.replace(/\/$/, '')}/api/nasa/imagen?url=${encodeURIComponent(urlOriginal)}`
+  }
+
+  // Desarrollo: proxy local. Producción sin backend: URL directa de NASA.
+  if (import.meta.env.DEV) {
+    return `/api/nasa/imagen?url=${encodeURIComponent(urlOriginal)}`
+  }
+  return urlOriginal
 }
