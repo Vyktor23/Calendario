@@ -18,8 +18,6 @@ Calendario web con clima, festivos de Colombia, fases lunares e imágenes del co
 - **Temas** — 7 paletas visuales (Cosmos, Aurora, Atardecer, Océano, Bosque, Medianoche, Sakura)
 - **Eventos propios** — Se guardan en el navegador (`localStorage`)
 
-El calendario HTML original se conserva en `legacy/`.
-
 ---
 
 ## Requisitos
@@ -100,7 +98,6 @@ Calendario/
 │       ├── moon.py          # Fases lunares
 │       └── ubicacion.py     # Nombre del lugar por coordenadas
 │
-├── legacy/                  # Calendario HTML estático original
 └── README.md
 ```
 
@@ -197,4 +194,4 @@ Vite redirige las peticiones `/api/*` al servidor Python en desarrollo.
 
 ---
 
-*Proyecto educativo SENA*
+*Proyecto educativo SENA — calendario web full-stack.*
