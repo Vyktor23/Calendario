@@ -174,17 +174,23 @@ Vite redirige las peticiones `/api/*` al servidor Python en desarrollo.
 
 ### Frontend en Vercel
 
-En **Project Settings → General**:
+**Paso 1 — Dashboard** (proyecto **Calendario** → **Settings** → **Build and Deployment**):
 
 | Opción | Valor |
 |--------|--------|
-| **Root Directory** | `chronos` |
-| **Node.js Version** | `24.x` |
-| **Framework Preset** | Vite |
-| **Build Command** | `npm run build` |
-| **Output Directory** | `dist` |
+| **Root Directory** | *(vacío — raíz del repo)* |
+| **Node.js Version** | **24.x** |
+| **Framework Preset** | **Vite** |
+| **Build Command** | *(dejar vacío para usar `vercel.json`)* |
+| **Output Directory** | *(dejar vacío para usar `vercel.json`)* |
 
-El repo ya incluye `chronos/vercel.json`, `chronos/.nvmrc` y `"engines": { "node": "24.x" }` en `package.json` para que Vercel use Node 24 automáticamente.
+Si **Framework Preset** dice "Other" y el build tarda menos de 5 segundos, está mal: no compiló la app y verás **404**.
+
+**Paso 2 — Subir el código** (debe existir `vercel.json` y `package.json` en la raíz del repo).
+
+**Paso 3 — Redeploy** el último commit.
+
+El `vercel.json` de la raíz compila `chronos/` y publica `chronos/dist/`.
 
 > **Importante:** El frontend en Vercel es estático. Clima, festivos e imágenes NASA necesitan el backend Python desplegado por separado (Railway, Render, etc.) y configurar su URL en el frontend.
 
